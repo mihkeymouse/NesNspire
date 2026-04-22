@@ -1,6 +1,8 @@
 ## NesNspire
 > Now you can once again play Mario in physics class
-![GIF of Super Mario bros running on a Texas Instruments Nspire CX II CAS.](images/mario.jpg)
+<p align="center">
+<img src="images/mario.jpg" width="50%">
+</p>
 NesNspire is a port of InfoNES for the TI Nspire CX II graphing calculator. This project was conceived because the previously working port, Nespire, was written in Assembly and has been dead for a long time.
 
 
@@ -43,14 +45,13 @@ Simply copy over nesnspire.tns to your calculator, and place your ROMS in the sa
 
 > [!CAUTION]
 NesNspire is a free, open-source project and is not affiliated with, nor endorsed by, Nintendo. All trademarks are the property of their respective owners.
-
 This software is provided "as-is." I cannot be held responsible for any copyright infringement committed by the end-user. It is the user's sole responsibility to ensure they have the legal right to use the ROM files they load into the software.
 
-## Future plans
+## Contributing
 This project is still a work-in-progress, as such, expect bugs to popup from time to time. Feel free to contribute to this project by submitting a pull request!
 
 
 ## Credits
-[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator
-The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK
-My aunt - for gifting me my Nspire.
+[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator  
+The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK  
+My aunt - for gifting me my Nspire.  
