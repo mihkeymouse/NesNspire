@@ -1,0 +1,22 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.elf
+*.zehn
+*.tns
+*.bin
+
+# Log files
+*.log
+
+# Windows specific
+thumbs.db
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.sln
