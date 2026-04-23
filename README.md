@@ -1,5 +1,5 @@
 ## NesNspire
-> Now you can once again play Mario in physics class
+> Now you can once again play NES in physics class
 <p align="center">
 <img src="images/mario.jpg" width="50%">
 </p>
@@ -21,8 +21,8 @@ make
 Copy the generated nesnspire.tns file over to your calculator, and place your ROMS in the same directory as the emulator. Enjoy!
 
 
-##Downloading from Releases
-Alternatively, head on over to [RELEASES]() and download the latest build.
+## Downloading from Releases
+Alternatively, head on over to [RELEASES](https://github.com/mihkeymouse/NesNspire/releases/) and download the latest build.
 Simply copy over nesnspire.tns to your calculator, and place your ROMS in the same directory as the emulator. Enjoy!
 
 ## Controls
@@ -53,6 +53,6 @@ This project is still a work-in-progress, as such, expect bugs to popup from tim
 
 
 ## Credits
-[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator  
-The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK  
+[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator   
+The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK   
 My aunt - for gifting me my Nspire.
