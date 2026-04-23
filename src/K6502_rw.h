@@ -416,7 +416,8 @@ static inline void K6502_Write( WORD wAddr, BYTE byData )
           break;
 
         case 0x15:  /* 0x4015 */
-          InfoNES_pAPUWriteControl( wAddr, byData );
+          if ( !APU_Mute )
+            InfoNES_pAPUWriteControl( wAddr, byData );
 #if 0
           /* Unknown */
           if ( byData & 0x10 ) 

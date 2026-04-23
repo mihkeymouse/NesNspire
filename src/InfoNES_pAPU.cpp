@@ -29,6 +29,8 @@ WORD entertime;
 #define APU_WRITEFUNC(name, evtype) \
 void ApuWrite##name(WORD addr, BYTE value) \
 { \
+  if ( cur_event >= APU_EVENT_MAX ) \ //hard bounds cur_events so it does not write past APU_EVENT_MAX
+    return; \
   ApuEventQueue[cur_event].time = entertime - g_wPassedClocks; \
   ApuEventQueue[cur_event].type = APUET_W_##evtype; \
   ApuEventQueue[cur_event].data = value; \
