@@ -126,7 +126,7 @@ static int choose_rom_from_browser(void) {
     snprintf(message, sizeof(message),
       "NesNspire\n"
       "A port of InfoNES for the Nspire CX II CAS\n"
-      "Copyright 2026 Malik Idrees Hasan Khan\n\n"
+      "Malik Idrees Hasan Khan\n\n"
       "Folder:\n%s\n\n"
       "ROM %d/%d\n%s\n\n"
       "Press HOME to cancel",
