@@ -129,7 +129,7 @@ static inline BYTE K6502_Read( WORD wAddr )
       if ( wAddr == 0x4015 )
       {
         // APU control
-        byRet = APU_Reg[ 0x4015 ];
+        byRet = APU_Reg[ 0x15 ];
 	if ( ApuC1Atl > 0 ) byRet |= (1<<0);
 	if ( ApuC2Atl > 0 ) byRet |= (1<<1);
 	if (  !ApuC3Holdnote ) {
@@ -140,7 +140,7 @@ static inline BYTE K6502_Read( WORD wAddr )
 	if ( ApuC4Atl > 0 ) byRet |= (1<<3);
 
 	// FrameIRQ
-        APU_Reg[ 0x4015 ] &= ~0x40;
+        APU_Reg[ 0x15 ] &= ~0x40;
         return byRet;
       }
       else
@@ -343,14 +343,14 @@ static inline void K6502_Write( WORD wAddr, BYTE byData )
               PPURAM[ 0x3f10 ] = PPURAM[ 0x3f14 ] = PPURAM[ 0x3f18 ] = PPURAM[ 0x3f1c ] = 
               PPURAM[ 0x3f00 ] = PPURAM[ 0x3f04 ] = PPURAM[ 0x3f08 ] = PPURAM[ 0x3f0c ] = byData;
               PalTable[ 0x00 ] = PalTable[ 0x04 ] = PalTable[ 0x08 ] = PalTable[ 0x0c ] =
-              PalTable[ 0x10 ] = PalTable[ 0x14 ] = PalTable[ 0x18 ] = PalTable[ 0x1c ] = NesPalette[ byData ] | 0x8000;
+              PalTable[ 0x10 ] = PalTable[ 0x14 ] = PalTable[ 0x18 ] = PalTable[ 0x1c ] = NesPalette[ byData & 0x3f ] | 0x8000;
             }
             else
 	    if ( addr & 3 )
             {
               // Palette
               PPURAM[ addr ] = byData;
-              PalTable[ addr & 0x1f ] = NesPalette[ byData ];
+              PalTable[ addr & 0x1f ] = NesPalette[ byData & 0x3f ];
             }
           }
           break;
