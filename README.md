@@ -53,6 +53,6 @@ This project is still a work-in-progress, as such, expect bugs to popup from tim
 
 
 ## Credits
-[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator
-The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK
+[Jay Kumogata](https://github.com/jay-kumogata/InfoNES) — original InfoNES emulator  
+The [Ndless team](https://github.com/Ndless-Nspire) - for the fantastic jailbreak and SDK  
 My aunt - for gifting me my Nspire.
