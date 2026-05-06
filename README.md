@@ -42,6 +42,9 @@ Simply copy over nesnspire.tns to your calculator, and place your ROMS in the sa
 | Doc + 1 | Frameskip − |
 | Doc + 3 | Frameskip + |
 | Menu | Toggle screen edge clipping |
+|  S   | Save State                  |
+|  L   | Load State                  |
+|  P   | Toggle Palette - NTSC or Default|
 
 > [!CAUTION]
 NesNspire is a free, open-source project and is not affiliated with, nor endorsed by, Nintendo. All trademarks are the property of their respective owners.
