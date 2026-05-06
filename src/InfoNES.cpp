@@ -781,6 +781,7 @@ void InfoNES_DrawLine()
   int nSprData;
   BYTE bySprCol;
   BYTE pSprBuf[ NES_DISP_WIDTH + 7 ];
+  WORD *pLineTop;
 
   /*-------------------------------------------------------------------*/
   /*  Render Background                                                */
@@ -790,7 +791,8 @@ void InfoNES_DrawLine()
   MapperRenderScreen( 1 );
 
   // Pointer to the render position
-  pPoint = &WorkFrame[ PPU_Scanline * NES_DISP_WIDTH ];
+  pLineTop = &WorkFrame[ PPU_Scanline * NES_DISP_WIDTH ];
+  pPoint = pLineTop;
 
   // Clear a scanline if screen is off
   if ( !( PPU_R1 & R1_SHOW_SCR ) )
@@ -1036,7 +1038,7 @@ void InfoNES_DrawLine()
     }
 
     // Rendering sprite
-    pPoint -= ( NES_DISP_WIDTH - PPU_Scr_H_Bit );
+    pPoint = pLineTop;
     for ( nX = 0; nX < NES_DISP_WIDTH; ++nX )
     {
       nSprData = pSprBuf[ nX ];
